@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+
+  overflow-x: hidden;
+}
+
+a {
+  color: #10263f;
+  text-decoration: none;
+}
+
+.resume-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  width: 100%;
+  min-width: 0;
+}
+
+.profile {
+  width: 30%;
+  min-width: 0;
+
+  background: #ffffff;
+  color: #10263f;
+}
+
+.profile .container {
+  width: 100%;
+}
+
+.profile-top {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.picture-resume-wrapper {
+  flex: 0 0 40%;
+  min-width: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.picture-resume {
+  width: 150px;
+  height: 150px;
+
+  flex-shrink: 0;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.picture-resume img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  box-shadow: 10px 10px 10px #26253b;
+}
+
+
+.name-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.profile h1 {
+  margin: 0;
+
+  font-family: "Varela Round", sans-serif;
+
+  color: #10263f;
+
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+
+  text-align: left;
+  text-transform: uppercase;
+
+  line-height: 1;
+}
+
+.contact-info,
+.contact-social {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(80px, 40%) minmax(0, 60%);
+
+  gap: 0;
+
+  text-align: left;
+}
+
+.contact-info {
+  margin-top: 80px;
+}
+
+.contact-social {
+  margin-top: 0;
+}
+
+.list-titles,
+.list-titles2 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 600;
+  color: #26253b;
+
+  list-style: none;
+}
+
+.list-content {
+  margin: 0;
+  padding: 0;
+
+  color: #26253b;
+
+  font-weight: 300;
+
+  list-style: none;
+
+  min-width: 0;
+}
+
+.profile li {
+  margin-bottom: 10px;
+}
+
+.mailperso {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact-presentation {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  text-align: left;
+
+  font-weight: 300;
+}
+
+.contact-presentation p {
+  margin: 0;
+}
+
+.bold {
+  color: #10263f;
+  font-weight: 400;
+  font-size: larger;
+}
+
+.experience {
+  width: 69%;
+  min-width: 0;
+
+  background: #10263f;
+
+  color: #9099a0;
+
+  font-weight: 300;
+
+  margin-left: auto;
+}
+
+.experience .container {
+  width: 100%;
+}
+
+.section-heading {
+  width: 100%;
+
+  margin: 0 0 30px;
+
+  color: #ffffff;
+
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  text-align: left;
+
+  text-transform: uppercase;
+}
+
+.E {
+  color: #ffffff;
+
+  font-size: 1.45em;
+
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.D {
+  color: #ffffff;
+
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.experience-title {
+  margin-bottom: 15px;
+
+  color: #ffffffed;
+
+  font-size: 1.05rem;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  text-transform: uppercase;
+}
+
+.time {
+  color: #9099a0;
+
+  font-size: 0.95rem;
+
+  text-align: left;
+}
+
+.point {
+  margin: 0 0 0 18px;
+  padding: 0;
+
+  list-style: disc;
+}
+
+.point li {
+  margin-bottom: 8px;
+}
+
+.experience-list {
+  width: 100%;
+}
+
+.experience-item {
+  display: grid;
+
+  grid-template-columns:
+    minmax(150px, 40%) minmax(0, 60%);
+
+  gap: 0;
+
+  margin-bottom: 60px;
+}
+
+.experience-company {
+  padding-right: 30px;
+}
+
+.experience-description {
+  min-width: 0;
+  padding-right: 20px;
+}
+
+.simple-section {
+  display: grid;
+
+  grid-template-columns:
+    minmax(150px, 40%) minmax(0, 60%);
+
+  margin-bottom: 60px;
+}
+
+.section-meta {
+  padding-right: 30px;
+}
+
+.section-description {
+  min-width: 0;
+  padding-right: 20px;
+}
+
+.section-description p,
+.formation-final p {
+  margin: 0;
+}
+
+.formation-final {
+  margin-bottom: 20px;
+}
+
+.simple-section+.formation-final {
+  margin-top: 0px;
+}
+
+@media (max-width: 1800px) {
+  .simple-section+.formation-final {
+    margin-top: 0px;
+  }
+}
+
+.section-padding {
+  padding: 60px 60px 40px 40px;
+}
+
+@media (max-width: 1100px) {
+
+  .profile {
+    width: 36%;
+  }
+
+  .experience {
+    width: 64%;
+  }
+
+  .section-padding {
+    padding: 45px 35px;
+  }
+
+  .profile-top {
+    gap: 15px;
+  }
+
+  .picture-resume {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-info {
+    margin-top: 60px;
+  }
+
+  .contact-presentation {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  .resume-wrapper {
+    display: block;
+  }
+
+  .profile,
+  .experience {
+    width: 100%;
+  }
+
+  .profile {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .experience {
+    min-height: 0;
+  }
+
+  .profile-top {
+    max-width: 700px;
+    margin: 0 auto;
+
+    justify-content: center;
+  }
+
+  .contact-info,
+  .contact-presentation,
+  .contact-social {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-info {
+    margin-top: 50px;
+  }
+
+  .contact-presentation {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .section-padding {
+    padding: 35px 20px;
+  }
+
+  .profile-top {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .picture-resume-wrapper {
+    width: 100%;
+  }
+
+  .picture-resume {
+    width: 125px;
+    height: 125px;
+  }
+
+  .name-wrapper {
+    width: 100%;
+  }
+
+  .profile h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .contact-info,
+  .contact-social {
+    grid-template-columns: 35% 65%;
+  }
+
+  .contact-info {
+    margin-top: 45px;
+  }
+
+  .contact-presentation {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .section-heading {
+    font-size: 1.35rem;
+  }
+
+  .experience-item,
+  .simple-section {
+    grid-template-columns: 1fr;
+
+    margin-bottom: 40px;
+  }
+
+  .experience-company,
+  .section-meta {
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .experience-description,
+  .section-description {
+    padding-right: 0;
+  }
+
+  .experience-title {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .section-padding {
+    padding: 30px 15px;
+  }
+
+  .picture-resume {
+    width: 110px;
+    height: 110px;
+  }
+
+  .profile h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact-info,
+  .contact-social {
+    grid-template-columns: 38% 62%;
+  }
+
+  .profile li {
+    margin-bottom: 8px;
+  }
+
+  .section-heading {
+    font-size: 1.15rem;
+
+    line-height: 1.3;
+  }
+
+  .experience-title {
+    font-size: 0.95rem;
+  }
+
+  .time {
+    font-size: 0.85rem;
+  }
+
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+
+  .profile-top {
+    flex-direction: row;
+
+    align-items: center;
+
+    text-align: left;
+  }
+
+  .picture-resume-wrapper {
+    width: auto;
+
+    flex: 0 0 130px;
+  }
+
+  .picture-resume {
+    width: 110px;
+    height: 110px;
+  }
+
+  .name-wrapper {
+    width: auto;
+  }
+
+  .profile h1 {
+    text-align: left;
+  }
+
+  .section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .contact-info {
+    margin-top: 35px;
+  }
+
+  .contact-presentation {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .experience-item,
+  .simple-section {
+    grid-template-columns: 35% 65%;
+  }
+
+}
+
+@media (max-width: 340px) {
+
+  .contact-info,
+  .contact-social {
+    grid-template-columns: 40% 60%;
+  }
+
+  .profile h1 {
+    font-size: 1.55rem;
+  }
+
+  .section-heading {
+    font-size: 1.05rem;
+  }
+
+}
