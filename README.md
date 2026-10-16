@@ -2,7 +2,7 @@
 
 A clean, modern, and fully responsive **HTML5 and CSS3 resume template** designed to help professionals and students quickly showcase their profiles, professional experiences, and skills on GitHub Pages or a personal website.
 
-![Resume Project Preview](assets/img/screenshot.png)
+![Resume Project Preview](preview.png)
 
 ## Features
 
