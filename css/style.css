@@ -190,7 +190,7 @@ a {
 }
 
 .experience {
-  width: 69%;
+  width: 70%;
   min-width: 0;
 
   background: #10263f;
@@ -199,7 +199,7 @@ a {
 
   font-weight: 300;
 
-  margin-left: auto;
+  margin-left: 0px;
 }
 
 .experience .container {
@@ -340,7 +340,7 @@ a {
   padding: 60px 60px 40px 40px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 
   .profile {
     width: 36%;
